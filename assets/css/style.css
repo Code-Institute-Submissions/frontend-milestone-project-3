@@ -2,52 +2,28 @@
 
 /*--- Home Page ---*/
 
+.container {
+    height: 100vh;
+    font-family: 'Fredericka the Great', cursive; 
+    text-transform: uppercase;
+    background-color: rgb(219, 234, 248);
+}
 
 /*--- Navbar ---*/
-a {
-    color: #6f42c1;
-}
 
 .navbar {
-    font-family: 'Fredericka the Great', cursive;
-    text-transform: uppercase;
-    font-size: xx-large;
-    letter-spacing: 4px;
+    font-size: 1.5vw;
+    letter-spacing: 8px;
+    padding: 2rem 3rem;
+}
+
+.nav-link {
+    color: rgb(115, 55, 226);
+    padding: 2.5rem;
+}
+
+a:hover {
+    font-size: 3.5vw;
     color: #444;
-}
-
-.marquee {
-    position: relative;
-    overflow: hidden;
-    --offset: 20vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-}
-
-.marquee__inner {
-    width: fit-content;
-    display: flex;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 5s linear infinite;
-    animation-play-state: paused;
-}
-
-.marquee span {
-    font-size: 10vw;
-    padding: 0 2vw;
-}
-
-.marquee:hover .marquee__inner {
-    animation-play-state: running;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0);
-    }
-
-    100% {
-        transform: translate3d(var(--move-final), 0, 0);
-    }
+    padding: 0;
 }
