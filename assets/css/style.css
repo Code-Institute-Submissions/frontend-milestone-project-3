@@ -1,29 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
+body {
+   background-color: rgb(231, 223, 200); 
+}
 /*--- Home Page ---*/
 
 .container {
-    height: 100vh;
     font-family: 'Fredericka the Great', cursive; 
     text-transform: uppercase;
-    background-color: rgb(219, 234, 248);
+    padding: 1rem 3rem;
 }
+
+h1 {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.badge-secondary {
+    color: rgb(231, 223, 200); 
+    background-color: #9d7cb8;
+}
+
 
 /*--- Navbar ---*/
 
 .navbar {
+    height: 100vh;
     font-size: 1.5vw;
-    letter-spacing: 8px;
-    padding: 2rem 3rem;
+    letter-spacing: 10px;
+    padding-bottom: 4rem;
+    
 }
 
 .nav-link {
-    color: rgb(115, 55, 226);
-    padding: 2.5rem;
+    color: #9d7cb8;
+    padding: 2rem;
 }
 
 a:hover {
     font-size: 3.5vw;
-    color: #444;
-    padding: 0;
+    color: #fcfcfc;
+    padding: 0;   
 }
+
