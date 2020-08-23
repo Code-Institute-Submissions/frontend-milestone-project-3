@@ -5,10 +5,11 @@ body {
 }
 /*--- Home Page ---*/
 
-.container {
+.container, .about-container {
     font-family: 'Fredericka the Great', cursive; 
     text-transform: uppercase;
     padding: 1rem 3rem;
+    letter-spacing: 10px;
 }
 
 h1 {
@@ -21,13 +22,16 @@ h1 {
     background-color: #9d7cb8;
 }
 
+#menu-image {
+    height: 20vh;
+    width: 20vw;
+}
 
 /*--- Navbar ---*/
 
 .navbar {
     height: 100vh;
     font-size: 1.5vw;
-    letter-spacing: 10px;
     padding-bottom: 4rem;
     
 }
@@ -41,5 +45,30 @@ a:hover {
     font-size: 3.5vw;
     color: #fcfcfc;
     padding: 0;   
+}
+
+/*-- Breaks --*/
+
+.break-line {
+    background-color: #fcfcfc;
+    height: 5px;
+    width: 300px;
+    margin-bottom: 20vh;
+}
+
+/*--About--*/
+
+.about-container {
+    height: 80vh;
+    background-color: #9d7cb8;
+    color: rgb(231, 223, 200);
+    text-align: center;
+    padding: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.about-info {
+
 }
 
