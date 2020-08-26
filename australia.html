@@ -29,36 +29,33 @@
 <script>
     function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3.5,
+                zoom: 4.5,
                 center: {
-                    lat: -13.51643,
-                    lng: -55.97852,
+                    lat: -25.504631,
+                    lng: 141.03604,
                 }
             });
 
             var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
             var locations = [{
-                lat: -22.91216,
-                lng: -43.17501
+                lat: -33.8696,
+                lng: 151.20695
             }, {
-                lat: -25.69726,
-                lng: -54.44569
+                lat: -28.64694,
+                lng: 153.61276
             }, {
-                lat: -34.60851,
-                lng: -58.37349
+                lat: -25.259954,
+                lng: 153.14319
             }, {
-                lat: -32.89035,
-                lng: -68.84332,
+                lat: -20.257132,
+                lng: 148.97183,
             }, {
-                lat: -20.266562,
-                lng: -67.620552,
+                lat: -16.91959,
+                lng: 145.77371,
             }, {
-                lat: -13.51643,
-                lng: -71.97852,
-            }, {
-                lat: 10.42505,
-                lng: -75.53837
+                lat: -25.344631,
+                lng: 131.03604,
             }];
 
             var markers = locations.map(function(location, i) {

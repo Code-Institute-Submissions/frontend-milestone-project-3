@@ -18,47 +18,60 @@
 <!-- Home Page--> 
 <div class="container">
 
+    
     <h1><span class="badge badge-secondary">rt</span></h1>
 
-        <!-- Navbar--> 
-                <div class="navbar">
-                    <nav class="nav flex-column">
-                        <a class="nav-link active" href="index.html" data-img="assets/images/#########">
-                        <span>home</span>
-                        </a>
+    <div id="map"></div>    
 
-                        <a class="nav-link" href="europe.html" data-img="assets/images/colosseum.jpg">
-                        <span>europe</span>
-                        </a>
-                        <div class="hover-reveal">
-                            <div class="hover-reveal__inner" style="overflow:;">
-                                <div class="hover-reveal__img" style="background-image: url(../assets/images/colosseum.jpg);">
-                                </div>
-                            </div>
-                        </div>
-
-                        <a class="nav-link" href="asia.html" data-img="assets/images/#########">
-                        <span>asia</span>
-                        </a>
-                        
-                        <a class="nav-link" href="north america" data-img="assets/images/#########">
-                        <span>north america</span>
-                        </a>
-                        
-                        <a class="nav-link" href="southamerica.html" data-img="assets/images/#########">
-                        <span>south america</span>
-                        </a>
-                        
-                        <a class="nav-link" href="australia&newzealand.html" data-img="assets/images/#########">
-                        <span>australia & new zealand</span>
-                        </a>
-                    </nav>
-                </div>
-        <!-- end of navbar-->
-</div>
-
-<hr 
+</div> 
 
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script>
+    function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: {
+                    lat: 35.481766,
+                    lng: -97.54105
+                }
+            });
+
+            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+
+            var locations = [{
+                lat: 40.71455,
+                lng: -74.00712
+            }, {
+                lat: 38.89037,
+                lng: -77.03196
+            }, {
+                lat: 41.88425,
+                lng: -87.63245
+            }, {
+                lat: 36.23763,
+                lng: -113.07173,
+            }, {
+                lat: 36.17191,
+                lng: -115.13997,
+            }, {
+                lat: 34.05349,
+                lng: -118.24532,
+            }];
+
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+</script>
+
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDxzfSci_gvBajsir25TV1OYmXPlsG9FA&callback=initMap"></script>
 </body>
 </html>

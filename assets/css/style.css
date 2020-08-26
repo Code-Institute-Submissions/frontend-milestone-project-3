@@ -29,22 +29,23 @@ h1 {
 
 /*--- Navbar ---*/
 
-.navbar {
+.navbar-home {
     height: 100vh;
-    font-size: 1.5vw;
-    padding-bottom: 4rem;
+    font-size: 2vw;
+    padding-bottom: 2.5rem;
     
 }
 
-.nav-link {
+.nav-link, a {
     color: #9d7cb8;
     padding: 2rem;
 }
 
-a:hover {
+.navbar-home a:hover {
     font-size: 3.5vw;
     color: #fcfcfc;
-    padding: 0;   
+    padding: 0;  
+    text-decoration: none; 
 }
 
 /*-- Breaks --*/
@@ -59,7 +60,7 @@ a:hover {
 /*--About--*/
 
 .about-container {
-    height: 80vh;
+    height: 60vh;
     background-color: #9d7cb8;
     color: rgb(231, 223, 200);
     text-align: center;
@@ -69,6 +70,14 @@ a:hover {
 }
 
 .about-info {
-
+    padding-top: 5vh;
 }
+
+/*-- Map --*/
+
+#map {
+    height: 80vh;
+}
+
+/*-- Social Links --*/
 
