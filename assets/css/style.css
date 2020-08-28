@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap:100,200,300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap:100,200,300,400,500,600,700');
 
 body {
    background-color: rgb(231, 223, 200); 
@@ -11,18 +11,23 @@ body {
 }
 
 .container, .about-container { 
-    text-transform: uppercase;
     padding: 1rem 3rem;
     letter-spacing: 10px;
 }
 
-.about-container, .asia-info {
+.about-container, .continent-info {
     height: flex;
     width: 100vw;
-    background-color: #9d7cb8;
-    color: rgb(231, 223, 200);
-    text-align: center;
-    font-family: 'Mukta', sans-serif;
+    background-color: rgb(231, 223, 200);
+    color: #000000;
+    font-family: 'Alata', sans-serif;
+}
+/*-- Text--*/
+
+.badge-secondary, .navbar-home, h2, h4 {
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive; 
+    color: #9d7cb8;
 }
 
 /*-- Home Page--*/
@@ -68,8 +73,8 @@ h1 {
 .break-line {
     background-color: #fcfcfc;
     height: 5px;
-    width: 300px;
-    margin-bottom: 10vh;
+    width: 50vw;
+    margin-bottom: 5vh;
     margin-top: 10vh;
 }
 
@@ -77,12 +82,20 @@ h1 {
 
 .about-info {
     padding: 2vh 5vw;
-    font-size: large;
+    font-size: x-large;
+    text-align: center;
+    color: #9d7cb8;
 }
 
 h2 {
-    padding-top: 2rem;
-    padding-bottom: 0;
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+h4 {
+    padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 
 /*-- Map --*/
@@ -94,13 +107,12 @@ h2 {
 /*-- Asia Info--*/
 
 .asia-info {
-    font-weight:700;
 }
 
-h3 {
-    padding: 3rem;
+p {
+    text-align: left;
+    letter-spacing: 0;
 }
-
 
 /*-- Social Links --*/
 
