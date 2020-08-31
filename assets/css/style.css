@@ -53,6 +53,11 @@ h1 {
     width: 20vw;
 }
 
+p {
+    text-align: left;
+    letter-spacing: 0;
+}
+
 /*--- Navbar ---*/
 
 .navbar-home {
@@ -74,6 +79,11 @@ h1 {
     text-decoration: none; 
 }
 
+a.navbar-brand {
+    color: #9d7cb8;
+    text-transform: uppercase;
+    padding-right: 2rem;
+}
 /*-- Breaks --*/
 
 .break-line {
@@ -109,14 +119,52 @@ h4 {
     height: 80vh;
 }
 
-/*-- Asia Info--*/
+/*-- Images --*/
 
-.asia-info {
+.temple-image {
+    background: url("assets/images/temple.jpg") no-repeat center center;
+    height: 30vh;
 }
 
-p {
-    text-align: left;
-    letter-spacing: 0;
+.budapest-image {
+    background: url("assets/images/bath-party-budapest.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.byron-image {
+    background: url("assets/images/byron-bay.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.central-park-image {
+    background: url("assets/images/central-park.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.rio-image {
+    background: url("assets/images/christ-the-redeemer.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.elephant-image {
+    background: url("assets/images/elephant.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.barcelona-image {
+    background: url("assets/images/barcelona.jpg") no-repeat center center;
+    height: 30vh;
+    
+}
+
+.ayers-rock-image {
+    background: url("assets/images/ayers-rock.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.paris-image {
+    background: url("assets/images/paris.jpg") no-repeat center center;
+    height: 30vh;
 }
 
 /*-- Footer --*/
