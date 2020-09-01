@@ -15,11 +15,10 @@ body {
     letter-spacing: 10px;
 }
 
-.about-container, .continent-info {
+.about-container, .continent-info, .booking {
     height: flex;
     width: 100vw;
     background-color: rgb(231, 223, 200);
-    color: #000000;
     font-family: 'Alata', sans-serif;
 }
 
@@ -30,10 +29,14 @@ body {
 
 /*-- Text--*/
 
-.badge-secondary, .navbar-home, h2, h4 {
+.badge-secondary, .navbar-home, h2, h4, h5 {
     text-transform: uppercase;
     font-family: 'Fredericka the Great', cursive; 
     color: #9d7cb8;
+}
+
+h5 p {
+    color: #000;
 }
 
 /*-- Home Page--*/
@@ -122,48 +125,133 @@ h4 {
 /*-- Images --*/
 
 .temple-image {
-    background: url("assets/images/temple.jpg") no-repeat center center;
+    background: no-repeat center center;
     height: 30vh;
 }
 
 .budapest-image {
-    background: url("assets/images/bath-party-budapest.jpg") no-repeat center center;
+    background: no-repeat center center;
     height: 30vh;
 }
 
 .byron-image {
-    background: url("assets/images/byron-bay.jpg") no-repeat center center;
+    background: no-repeat center center;
     height: 30vh;
 }
 
 .central-park-image {
-    background: url("assets/images/central-park.jpg") no-repeat center center;
+    background: no-repeat center center;
     height: 30vh;
 }
 
 .rio-image {
-    background: url("assets/images/christ-the-redeemer.jpg") no-repeat center center;
+    background: no-repeat center center;
     height: 30vh;
 }
 
 .elephant-image {
-    background: url("assets/images/elephant.jpg") no-repeat center center;
+    background: no-repeat center center;
     height: 30vh;
 }
 
 .barcelona-image {
-    background: url("assets/images/barcelona.jpg") no-repeat center center;
+    background: no-repeat center center;
     height: 30vh;
     
 }
 
 .ayers-rock-image {
-    background: url("assets/images/ayers-rock.jpg") no-repeat center center;
+    background: no-repeat center center;
     height: 30vh;
 }
 
 .paris-image {
-    background: url("assets/images/paris.jpg") no-repeat center center;
+    background: no-repeat center center;
+    height: 30vh;
+}
+
+/*-- Asia Images --*/
+
+.the-beach-image {
+    background: url("assets/images/asia/the-beach.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.koh-san-road-image {
+    background: url("assets/images/asia/koh-san-road.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.hai-van-pass-image {
+    background: url("assets/images/asia/hai-van-pass.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+/*-- Australia Images --*/
+
+.fraser-island-image {
+    background: url("assets/images/australia/fraser-island.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.sydney-image {
+    background: url("assets/images/australia/sydney.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.whitsundays-image {
+    background: url("assets/images/australia/whitsundays.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+/*-- Europe Images --*/
+
+.amsterdam-image {
+    background: url("assets/images/europe/amsterdam.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.london-image {
+    background: url("assets/images/europe/london.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.krakow-image {
+    background: url("assets/images/europe/krakow.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+/*-- North America Images --*/
+
+.hollywood-image {
+    background: url("assets/images/northamerica/hollywood.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.vegas-image {
+    background: url("assets/images/northamerica/vegas.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.washington-image {
+    background: url("assets/images/northamerica/washington.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+/*-- South America Images --*/
+
+.mendoza-image {
+    background: url("assets/images/southamerica/mendoza.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.sugarloaf-image {
+    background: url("assets/images/southamerica/sugarloaf.jpg") no-repeat center center;
+    height: 30vh;
+}
+
+.iguazu-image {
+    background: url("assets/images/southamerica/iguazu.jpg") no-repeat center center;
     height: 30vh;
 }
 
