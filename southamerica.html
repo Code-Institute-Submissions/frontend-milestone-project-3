@@ -78,13 +78,13 @@
     <div class="row">
 
         <div class="col-sm-4">
-            <img src="assets/images/southamerica/sugarloaf.jpg" class="sugarloaf-image">
+            <img src="assets/images/southamerica/sugarloaf.jpg" class="sample-images">
         </div>
         <div class="col-sm-4">
-            <img src="assets/images/southamerica/mendoza.jpg" class="mendoza-image">
+            <img src="assets/images/southamerica/mendoza.jpg" class="sample-images">
         </div>
         <div class="col-sm-4">
-            <img src="assets/images/southamerica/iguazu.jpg" class="iguazu-image">
+            <img src="assets/images/southamerica/iguazu.jpg" class="sample-images">
         </div>
         
     </div>
@@ -121,61 +121,17 @@
 
 <footer>
     <div class="footer-container col-12">
-        <ul class="list-group list-group-horizontal-md">
-            <li class="list-group-item"><a target="_blank" href="https://facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://pinterest.com"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a</li>
+        <ul class="row">
+            <li class="social-icon col-3"><a target="_blank" href="https://facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://pinterest.com"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a</li>
         </ul>
     </div>
 </footer>
 
 <script type="text/javascript" src="assets/js/script.js"></script>
-<script>
-    function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3.5,
-                center: {
-                    lat: -13.51643,
-                    lng: -55.97852,
-                }
-            });
-
-            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
-            var locations = [{
-                lat: -22.91216,
-                lng: -43.17501
-            }, {
-                lat: -25.69726,
-                lng: -54.44569
-            }, {
-                lat: -34.60851,
-                lng: -58.37349
-            }, {
-                lat: -32.89035,
-                lng: -68.84332,
-            }, {
-                lat: -20.266562,
-                lng: -67.620552,
-            }, {
-                lat: -13.51643,
-                lng: -71.97852,
-            }];
-
-            var markers = locations.map(function(location, i) {
-                return new google.maps.Marker({
-                    position: location,
-                    label: labels[i % labels.length]
-                });
-            });
-
-            var markerCluster = new MarkerClusterer(map, markers, {
-                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-            });
-        }
-</script>
-
+<script type="text/javascript" src="assets/js/southamerica.js"></script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDxzfSci_gvBajsir25TV1OYmXPlsG9FA&callback=initMap"></script>
 </body>

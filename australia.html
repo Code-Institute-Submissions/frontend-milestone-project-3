@@ -82,13 +82,13 @@
     <div class="row">
 
         <div class="col-sm-4">
-            <img src="assets/images/australia/fraser-island.jpg" class="fraser-island-image">
+            <img src="assets/images/australia/fraser-island.jpg" class="sample-images">
         </div>
         <div class="col-sm-4">
-            <img src="assets/images//australia/sydney.jpg" class="sydney-image">
+            <img src="assets/images//australia/sydney.jpg" class="sample-images">
         </div>
         <div class="col-sm-4">
-            <img src="assets/images/australia/whitsundays.jpg" class="whitsundays-image">
+            <img src="assets/images/australia/whitsundays.jpg" class="sample-images">
         </div>
         
     </div>
@@ -124,62 +124,17 @@
 
 <footer>
     <div class="footer-container col-12">
-        <ul class="list-group list-group-horizontal-md">
-            <li class="list-group-item"><a target="_blank" href="https://facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://pinterest.com"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a</li>
+        <ul class="row">
+            <li class="social-icon col-3"><a target="_blank" href="https://facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://pinterest.com"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a</li>
         </ul>
     </div>
 </footer>
 
-
 <script type="text/javascript" src="assets/js/script.js"></script>
-<script>
-    function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4.5,
-                center: {
-                    lat: -25.504631,
-                    lng: 141.03604,
-                }
-            });
-
-            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
-            var locations = [{
-                lat: -33.8696,
-                lng: 151.20695
-            }, {
-                lat: -28.64694,
-                lng: 153.61276
-            }, {
-                lat: -25.259954,
-                lng: 153.14319
-            }, {
-                lat: -20.257132,
-                lng: 148.97183,
-            }, {
-                lat: -16.91959,
-                lng: 145.77371,
-            }, {
-                lat: -25.344631,
-                lng: 131.03604,
-            }];
-
-            var markers = locations.map(function(location, i) {
-                return new google.maps.Marker({
-                    position: location,
-                    label: labels[i % labels.length]
-                });
-            });
-
-            var markerCluster = new MarkerClusterer(map, markers, {
-                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-            });
-        }
-</script>
-
+<script type="text/javascript" src="assets/js/australia.js"></script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDxzfSci_gvBajsir25TV1OYmXPlsG9FA&callback=initMap"></script>
 </body>

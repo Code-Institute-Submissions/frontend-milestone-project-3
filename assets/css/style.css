@@ -35,7 +35,7 @@ body {
     color: #9d7cb8;
 }
 
-h5 p {
+.booking a {
     color: #000;
 }
 
@@ -52,8 +52,10 @@ h1 {
 }
 
 #menu-image {
-    height: 20vh;
-    width: 20vw;
+    height: 40vh;
+    width: 35vw;
+    margin-top: 2.5rem;
+    border: 3px solid white;
 }
 
 p {
@@ -65,9 +67,8 @@ p {
 
 .navbar-home {
     height: 100vh;
-    font-size: 2vw;
+    font-size: 2rem;
     padding-bottom: 2.5rem;
-    
 }
 
 .nav-link {
@@ -76,7 +77,7 @@ p {
 }
 
 .navbar-home a:hover {
-    font-size: 3.5vw;
+    font-size: 3rem;
     color: #fcfcfc;
     padding: 0;  
     text-decoration: none; 
@@ -93,7 +94,7 @@ a.navbar-brand {
     background-color: #9d7cb8;
     height: 5px;
     width: 10vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 /*--About Us--*/
@@ -124,147 +125,22 @@ h4 {
 
 /*-- Images --*/
 
-.temple-image {
+.sample-images {
     background: no-repeat center center;
-    height: 30vh;
-}
-
-.budapest-image {
-    background: no-repeat center center;
-    height: 30vh;
-}
-
-.byron-image {
-    background: no-repeat center center;
-    height: 30vh;
-}
-
-.central-park-image {
-    background: no-repeat center center;
-    height: 30vh;
-}
-
-.rio-image {
-    background: no-repeat center center;
-    height: 30vh;
-}
-
-.elephant-image {
-    background: no-repeat center center;
-    height: 30vh;
-}
-
-.barcelona-image {
-    background: no-repeat center center;
-    height: 30vh;
-    
-}
-
-.ayers-rock-image {
-    background: no-repeat center center;
-    height: 30vh;
-}
-
-.paris-image {
-    background: no-repeat center center;
-    height: 30vh;
-}
-
-/*-- Asia Images --*/
-
-.the-beach-image {
-    background: url("assets/images/asia/the-beach.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.koh-san-road-image {
-    background: url("assets/images/asia/koh-san-road.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.hai-van-pass-image {
-    background: url("assets/images/asia/hai-van-pass.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-/*-- Australia Images --*/
-
-.fraser-island-image {
-    background: url("assets/images/australia/fraser-island.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.sydney-image {
-    background: url("assets/images/australia/sydney.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.whitsundays-image {
-    background: url("assets/images/australia/whitsundays.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-/*-- Europe Images --*/
-
-.amsterdam-image {
-    background: url("assets/images/europe/amsterdam.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.london-image {
-    background: url("assets/images/europe/london.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.krakow-image {
-    background: url("assets/images/europe/krakow.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-/*-- North America Images --*/
-
-.hollywood-image {
-    background: url("assets/images/northamerica/hollywood.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.vegas-image {
-    background: url("assets/images/northamerica/vegas.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.washington-image {
-    background: url("assets/images/northamerica/washington.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-/*-- South America Images --*/
-
-.mendoza-image {
-    background: url("assets/images/southamerica/mendoza.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.sugarloaf-image {
-    background: url("assets/images/southamerica/sugarloaf.jpg") no-repeat center center;
-    height: 30vh;
-}
-
-.iguazu-image {
-    background: url("assets/images/southamerica/iguazu.jpg") no-repeat center center;
-    height: 30vh;
+    height: 35vh;  
+    width: 25vw;
 }
 
 /*-- Footer --*/
 
-.list-group-item {
+.social-icon {
     background-color: #9d7cb8;
     border: none;
-    margin: 3vh;
+    padding: 1rem;
     text-align: center;
 }
 
-.list-group-item a i {
+.social-icon a i {
     background-color: #9d7cb8;
     color: rgb(231, 223, 200); 
     font-size: 40px;
@@ -273,8 +149,23 @@ h4 {
     width: 40px;
 }
 
-.list-group-item a i:hover{
+.social-icon a i:hover{
     color: #9d7cb8;
     background-color: rgb(231, 223, 200);
 }
 
+
+/*-- Image edits for small devices --*/
+
+@media (max-width: 900px) {
+    #menu-image {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .sample-images {
+        height: 40vh;
+        width: 80vw;
+    }
+}

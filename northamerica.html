@@ -79,13 +79,13 @@
     <div class="row">
 
         <div class="col-sm-4">
-            <img src="assets/images/northamerica/washington.jpg" class="washington-image">
+            <img src="assets/images/northamerica/washington.jpg" class="sample-images">
         </div>
         <div class="col-sm-4">
-            <img src="assets/images/northamerica/vegas.jpg" class="vegas-image">
+            <img src="assets/images/northamerica/vegas.jpg" class="sample-images">
         </div>
         <div class="col-sm-4">
-            <img src="assets/images/northamerica/hollywood.jpg" class="hollywood-image">
+            <img src="assets/images/northamerica/hollywood.jpg" class="sample-images">
         </div>
         
     </div>
@@ -120,61 +120,17 @@
 
 <footer>
     <div class="footer-container col-12">
-        <ul class="list-group list-group-horizontal-md">
-            <li class="list-group-item"><a target="_blank" href="https://facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            <li class="list-group-item"><a target="_blank" href="https://pinterest.com"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a</li>
+        <ul class="row">
+            <li class="social-icon col-3"><a target="_blank" href="https://facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li class="social-icon col-3"><a target="_blank" href="https://pinterest.com"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a</li>
         </ul>
     </div>
 </footer>
 
 <script type="text/javascript" src="assets/js/script.js"></script>
-<script>
-    function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: {
-                    lat: 35.481766,
-                    lng: -97.54105
-                }
-            });
-
-            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
-            var locations = [{
-                lat: 40.71455,
-                lng: -74.00712
-            }, {
-                lat: 38.89037,
-                lng: -77.03196
-            }, {
-                lat: 41.88425,
-                lng: -87.63245
-            }, {
-                lat: 36.23763,
-                lng: -113.07173,
-            }, {
-                lat: 36.17191,
-                lng: -115.13997,
-            }, {
-                lat: 34.05349,
-                lng: -118.24532,
-            }];
-
-            var markers = locations.map(function(location, i) {
-                return new google.maps.Marker({
-                    position: location,
-                    label: labels[i % labels.length]
-                });
-            });
-
-            var markerCluster = new MarkerClusterer(map, markers, {
-                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-            });
-        }
-</script>
-
+<script type="text/javascript" src="assets/js/northamerica.js"></script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDxzfSci_gvBajsir25TV1OYmXPlsG9FA&callback=initMap"></script>
 </body>
