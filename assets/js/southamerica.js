@@ -1,3 +1,5 @@
+/*-- Google Maps API for South America --*/
+
 function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 3.5,

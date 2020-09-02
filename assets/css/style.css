@@ -25,6 +25,9 @@ body {
 .footer-container {
     background-color: #9d7cb8;
     text-align: center;
+    height: 15vh;
+    width: 100vw;
+    margin-top: 8vh;
 }
 
 /*-- Text--*/
@@ -52,8 +55,8 @@ h1 {
 }
 
 #menu-image {
-    height: 40vh;
-    width: 35vw;
+    height: 35vh;
+    width: 30vw;
     margin-top: 2.5rem;
     border: 3px solid white;
 }
@@ -133,10 +136,14 @@ h4 {
 
 /*-- Footer --*/
 
+.row {
+    margin: 0;
+}
+
 .social-icon {
     background-color: #9d7cb8;
     border: none;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
 }
 
