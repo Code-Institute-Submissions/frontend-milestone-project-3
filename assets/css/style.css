@@ -16,7 +16,6 @@ body {
 }
 
 .about-container, .continent-info, .booking {
-    height: flex;
     width: 100vw;
     background-color: rgb(231, 223, 200);
     font-family: 'Alata', sans-serif;
@@ -28,6 +27,10 @@ body {
     height: 15vh;
     width: 100vw;
     margin-top: 8vh;
+}
+
+.row {
+    margin: 0;
 }
 
 /*-- Text--*/
@@ -135,10 +138,6 @@ h4 {
 }
 
 /*-- Footer --*/
-
-.row {
-    margin: 0;
-}
 
 .social-icon {
     background-color: #9d7cb8;
