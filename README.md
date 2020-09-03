@@ -50,7 +50,8 @@ Furthermore there are external links to sites where the customer can book flight
 
 ## UX
 
-For this project I chose to do a travel website. The target audience is prominently 18-35 year old backpackers. The aim is to enhance the users desire to travel the world. I have set up different pages for the most common locations/regions that the target age group would travel on a budget. From there I used my own personal travelling experience to create a route to provide an example of a trip for them to look at and get some inspiration. I then described each destination and explained why it was on the route and added “hot tips” and photos aswell. Below this are links to the best deals and websites for them to book flights, accommodation and tours. I sketched out some simple layout designs on Balsamiq as shown here:
+For this project I chose to do a travel website. The target audience is prominently 18-35 year old backpackers. The aim is to enhance the users desire to travel the world. I have set up different pages for the most common locations/regions that the target age group would travel on a budget. From there I used my own personal travelling experience to create a route to provide an example of a trip for them to look at and get some inspiration. I then described each destination and explained why it was on the route and added “hot tips” and photos aswell. Below this are links to the best deals and websites for them to book flights, accommodation and tours. I sketched out some simple layout designs on Balsamiq as shown in the Wireframes folder. 
+
 
 ## Features 
 
@@ -72,8 +73,9 @@ I would also perhaps add dotted lines to the Google Maps to join up each destina
 
 1 - JQuery. For this project I wanted to implement a hover effect that produced a different image depending on which continent they were hovering over on the navbar. 
 
-2 -Google Maps API. Within each element of the navbar there is a google map. This map is zoomed to the respective continent and on there are markers showing each destination I have written about. I did this by using the google maps api and wrote the code in js to add markers to the maps. 
+2 - Google Maps API. Within each element of the navbar there is a google map. This map is zoomed to the respective continent and on there are markers showing each destination I have written about. I did this by using the google maps api and wrote the code in js to add markers to the maps. 
 
+3 - Balsamiq. I used the Balsamiq tool to sketch out some layout designs before starting this project.
 ## Testing
 
 Throughout this project I was self testing all the code I was writing by viewing and updating the site in the browser. It was important to me that I monitored how the site looked all on device sizes. While this created many difficulties my main source of testing was running through the features and UX myself while the site was in different device widths.
